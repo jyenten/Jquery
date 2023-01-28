@@ -8,25 +8,28 @@
  </head>
  <body>
 
-    <p id="demo"></p>
-    <button onclick="firstFunction()"> try this shit</button>
+    <p id="firstFunction"></p>
+    <p id= "Multip"> </p>
 
+    <button onclick="Multip(), firstFunction()"> try this shit</button>
+
+ 
 <script>
     function firstFunction() {
        
-        const firstNumber = +prompt("Číslo");
+        const firstNumber = +prompt("Číslo na sčítání");
 
-        const secondNumber = +prompt("Číslo");
+        const secondNumber = +prompt("Číslo na sčítání");
 
         if (firstNumber !=  null, secondNumber != null, (firstNumber + secondNumber) % 2 == 0) {
     
 
-    document.getElementById("demo").innerHTML =
+    document.getElementById("firstFunction").innerHTML =
     "Výsledek je even " + (firstNumber + secondNumber);
 
     }
     else{
-        document.getElementById("demo").innerHTML =
+        document.getElementById("firstFunction").innerHTML =
     "Výsledek je odd " + (firstNumber + secondNumber);
         
     }
@@ -34,9 +37,27 @@
   
      
     }
-    
-
 </script>
+
+  <script> 
+        var x ;
+        var y = 3 ;
+    function Multip(){
+
+        const x = +prompt("Zadej číslo na násobení");
+
+        return  document.getElementById("Multip").innerHTML =
+    "Výsledek je " + (x * y);
+        
+
+        console.log(Number);
+        
+    }
+
+
+  </script>
+
+
     
  </body>
  </html>
