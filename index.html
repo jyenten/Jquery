@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./js/markLiElement.js">
+    <link rel="stylesheet" href="./js/code.jquery.js">
     <title>Document</title>
  </head>
  <body>
 
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+
+    </ul>
+     
+
+
     <p id="firstFunction"></p>
     <p id= "Multip"> </p>
 
+
+
     <button onclick="Multip(), firstFunction()"> try this shit</button>
+    <button onclick="b"> jquery</button>
 
  
 <script>
@@ -25,12 +41,12 @@
     
 
     document.getElementById("firstFunction").innerHTML =
-    "Výsledek je even " + (firstNumber + secondNumber);
+    "Výsledek sčítání je sudý " + (firstNumber + secondNumber);
 
     }
     else{
         document.getElementById("firstFunction").innerHTML =
-    "Výsledek je odd " + (firstNumber + secondNumber);
+    "Výsledek sčítání je lichý " + (firstNumber + secondNumber);
         
     }
 
@@ -47,12 +63,17 @@
         const x = +prompt("Zadej číslo na násobení");
 
         return  document.getElementById("Multip").innerHTML =
-    "Výsledek je " + (x * y);
-        
+    "Výsledek násobení " + (x * y);
 
-        console.log(Number);
+
+
+    console.log(alert.Multip);
+
+        
         
     }
+
+    
 
 
   </script>
